@@ -4,8 +4,6 @@ $user = getenv('MYSQLUSER') ?: 'root';
 $pass = getenv('MYSQL_ROOT_PASSWORD') ?: getenv('MYSQLPASSWORD') ?: 'sIIBeBetQvCraDNB1Xl1bITnzJhyivrs';
 $name = getenv('MYSQL_DATABASE') ?: 'railway';
 $port = getenv('MYSQLPORT') ?: 3306;
-
-// تعريف المتغيرات بقيم افتراضية فارغة
 $conn = null;
 $pdo = null;
 if (class_exists('mysqli')) {
